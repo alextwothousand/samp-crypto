@@ -1,0 +1,32 @@
+{
+	"user": "bork",
+	"repo": "samp-crypto",
+	"entry": "pawn-tests/test.pwn",
+	"output": "test/gamemodes/test.amx",
+	"dependencies": ["sampctl/pawn-stdlib"],
+	"dev_dependencies": ["pawn-lang/YSI-Includes"],
+	"include_path": "include",
+	"builds": [
+		{
+			"name": "test",
+			"includes": ["./include"]
+		}
+	],
+	"runtime": {
+		"plugins": ["bork/samp-crypto"]
+	},
+	"resources": [
+		{
+			"name": "samp-crypto-linux-x86.zip",
+			"platform": "linux",
+			"archive": true,
+			"plugins": ["plugins/samp-crypto.so"]
+		},
+		{
+			"name": "samp-crypto-windows-x86.zip",
+			"platform": "windows",
+			"archive": true,
+			"plugins": ["plugins/samp-crypto.dll"]
+		}
+	]
+}

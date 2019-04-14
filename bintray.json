@@ -1,0 +1,21 @@
+{
+    "package": {
+      "name": "builds",
+      "repo": "samp-crypto",
+      "subject": "bork"
+    },
+    "version": {
+      "name": "latest"
+    },
+    "files": [
+      {
+        "includePattern": "test/plugins/samp_crypto.so",
+        "uploadPattern": "samp_crypto.so",
+        "matrixParams": {
+          "override": 1
+        }
+      }
+    ],
+    "publish": true
+  }
+  
