@@ -48,7 +48,7 @@
 	* 0 - Salt or password are insufficient.
 	* -1 - One of the parameters (Nrp) do not meet the minimum criteria of 1. You should leave them as default.
 */
-native scrypt_hash(const password[], const dest[], size = sizeof dest, n = SCRYPT_COST, r = SCRYPT_RAM, p = SCRYPT_CPU);
+native scrypt_hash(const password[], dest[], size = sizeof dest, n = SCRYPT_COST, r = SCRYPT_RAM, p = SCRYPT_CPU);
 
 /*  scrypt_verify()
 	Parameters:
@@ -73,7 +73,7 @@ native scrypt_verify(const password[], const hashed_value[]);
 	* 0 - hash unsuccessful.
 	* -1 - Cost was not specified, or is below 1, or is above 30.
 */
-native bcrypt_hash(const password[], const dest[], size = sizeof dest, cost = BCRYPT_COST);
+native bcrypt_hash(const password[], dest[], size = sizeof dest, cost = BCRYPT_COST);
 
 /*  bcrypt_verify()
 	Parameters:
@@ -103,7 +103,7 @@ native bcrypt_verify(const password[], const hash[]);
 	* -1 - Lanes are below 1. They should remain the specified default.
 	* -2 - Fatal error occured.
 */
-native argon2_hash(const password[], const salt[], const dest[], size = sizeof dest, memcost = ARGON2_MEMCOST, timecost = ARGON2_TIMECOST, lanes = ARGON2_LANES, hashlength = ARGON2_HASH_LEN);
+native argon2_hash(const password[], const salt[], dest[], size = sizeof dest, memcost = ARGON2_MEMCOST, timecost = ARGON2_TIMECOST, lanes = ARGON2_LANES, hashlength = ARGON2_HASH_LEN);
 
 /*  argon2_compare()
 	Parameters:
