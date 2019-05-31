@@ -109,7 +109,7 @@ impl super::samp_crypto {
 		}
 
 		let encoded = samp_sdk::cp1251::encode(&hash)?;
-    	set_string!(encoded, dest, size);
+    		set_string!(encoded, dest, size);
 	
 		return Ok(1);
 	}
