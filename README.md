@@ -19,8 +19,8 @@ I plan on adding encryption methods like HMAC, so on and so fourth. If you have 
 * Enjoy!
 
 ### Credits
-* SyS - helping me out a lot, until my reliance eventually became less and less :joy:
-* Southclaws - helping me out a bit, even though most of the time he was at work :crying:
+* SyS - A lot of stuff :)
+* Southclaws - advice
 * iAmir - Testing
 * Dakyskye - Testing and the unit test.pwn.
 * Gravityfalls - Testing
